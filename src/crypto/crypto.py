@@ -12,7 +12,6 @@ class KeyGeneration:
         self.algQP = "Kyber512"
         self.privKyber = oqs.KeyEncapsulation(self.algQP)
         self.pubKyber = self.privKyber.generate_keypair()
-        print("keys generated")
 
     def get_public_keys(self):
 
